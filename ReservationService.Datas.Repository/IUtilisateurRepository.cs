@@ -12,5 +12,6 @@ namespace ReservationService.Datas.Repository
         Task<IEnumerable<Utilisateur>> GetAllUserAsync();
         Task<Utilisateur> GetUserById(int id);
         Task<bool> SaveUserAsync();
+        Task<IEnumerable<Utilisateur>> GetUserByString(string str);
     }
 }

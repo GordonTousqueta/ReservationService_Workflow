@@ -27,6 +27,11 @@ namespace ReservationService.Datas.Repository
             return await _context.Utilisateurs.Where(x => x.Id == id).FirstAsync();
         }
 
+        public Task<IEnumerable<Utilisateur>> GetUserByString(string str)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<bool> SaveUserAsync()
         {
             throw new NotImplementedException();

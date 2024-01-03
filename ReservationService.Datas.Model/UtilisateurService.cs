@@ -20,6 +20,11 @@ namespace ReservationService.Datas.Model
             return await _utilisateurRepo.GetUserById(id);
         }
 
+        public async Task<IEnumerable<Utilisateur>> GetUtilisateurByString(string str)
+        {
+            return await _utilisateurRepo.GetUserByString(str);
+        }
+
         public async Task<IEnumerable<Utilisateur>> GetUtilisateurServiceAsync()
         {
             return await _utilisateurRepo.GetAllUserAsync();

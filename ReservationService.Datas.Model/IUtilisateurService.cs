@@ -11,5 +11,6 @@ namespace ReservationService.Datas.Model
     {
         Task<IEnumerable<Utilisateur>> GetUtilisateurServiceAsync();
         Task<Utilisateur> GetUtilisateurById(int id);
+        Task<IEnumerable<Utilisateur>> GetUtilisateurByString(string str);
     }
 }
