@@ -11,7 +11,7 @@ namespace ReservationService.Datas.Model
     public class UtilisateurService : IUtilisateurService
     {
         IUtilisateurRepository _utilisateurRepo;
-        UtilisateurService(IUtilisateurRepository utilisateurRepository) 
+        public UtilisateurService(IUtilisateurRepository utilisateurRepository) 
         {
             _utilisateurRepo = utilisateurRepository;
         }
